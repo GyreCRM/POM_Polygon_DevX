@@ -1,0 +1,38 @@
+{
+    "@context": [
+        {
+            "@version": 1.1,
+            "@protected": true,
+            "id": "@id",
+            "type": "@type",
+            "EmployeeConfirmation": {
+            "@id": "https://raw.githubusercontent.com/Cosmodude/Gyre_DID/main/schema/EmployeeSchema.jsonld#EmployeeConfirmation",
+            "@context": {
+                "@version": 1.1,
+                "@protected": true,
+                "id": "@id",
+                "type": "@type",
+                "vocab": "https://github.com/Cosmodude/Gyre_DID/blob/main/schema/EmployeeSchema-vocab.md#",
+                "xsd": "http://www.w3.org/2001/XMLSchema#",
+                "issueDate": {
+                "@id": "vocab:issueDate",
+                "@type": "xsd:dateTime"
+                },
+                "organization":{
+                    "@id": "vocab:organization",
+                    "@type": "xsd:string"
+                },
+                "position":{
+                    "@id": "vocab:position",
+                    "@type": "xsd:string"
+                },
+                "GyreId":{
+                    "@id": "vocab:GyreID",
+                    "@type": "xsd:string"
+                    }
+                }
+            }
+        }
+    ]
+  }
+  
