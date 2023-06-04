@@ -9,8 +9,7 @@ const sleep = (milliseconds) => {
   return new Promise(resolve => setTimeout(resolve, milliseconds))
 }
 
-const baseUrl = "https://da41-222-112-225-79.ngrok-free.app";  // our frontend Url
-//const baseUrl = "http://localhost:8080";  // our frontend Url
+const baseUrl = import.meta.env.VITE_BACKEND_URL;
 
 type Props = {
   isVisitor: boolean;

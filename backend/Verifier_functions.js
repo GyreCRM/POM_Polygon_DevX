@@ -1,6 +1,7 @@
 import { auth } from '@iden3/js-iden3-auth';
 import getRawBody from 'raw-body';
 
+
 // Create a map to store the auth requests and their session IDs
 const requestMap = new Map();
 
@@ -8,8 +9,8 @@ const requestMap = new Map();
 
 export async function GetAuthRequest (req, res)  {
     // Audience is verifier id
-  
-    const hostUrl = "https://da41-222-112-225-79.ngrok-free.app";  // our frontend Url
+ 
+    const hostUrl = process.env.NGROK_URL; 
     const sessionId = 1; // check what is it 
  
     const callbackURL = "/api/callback"

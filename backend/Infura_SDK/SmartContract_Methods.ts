@@ -1,7 +1,5 @@
 // Import the libraries and load the environment variables.
-import { config as loadEnv } from 'dotenv';
 import { SDK, Auth, TEMPLATES, Metadata } from '@infura/sdk';
-loadEnv();
 import { ethers, utils } from 'ethers';
 
 // Create Auth object

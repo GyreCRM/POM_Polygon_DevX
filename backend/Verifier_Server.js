@@ -4,7 +4,9 @@ import getRawBody from 'raw-body';
 import { GetAuthRequest, Callback }  from './Verifier_functions.js';
 import cors from 'cors';
 import { addTokens, mintTokens } from './Infura_SDK/SmartContract_Methods.ts'
+import { config as loadEnv } from 'dotenv';
 
+loadEnv();
     
 const app = express();
 app.use(cors());
